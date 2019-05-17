@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.schoenfernsehen" version="1.0.0" name="schoener-fernsehen" provider-name="M. Koenig">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+        <import addon="script.module.requests" version="2.9.1"/>
+        <import addon="script.module.buggalo" version="1.1.2"/>
+        <import addon="script.module.inputstreamhelper" version="0.3.4"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">schoener-fernsehen</summary>
+        <description lang="en">With Schoener Fernsehen you receive on your computer 50 German, French and English speaking TV stations in the live streams.</description>
+        <description lang="de">Mit Schoener-Fernsehen empfangen Sie auf Ihrem Computer 50 deutsch-, franzoesisch- und englischsprachige Fernsehsender im Live-Streams</description>
+        <license>GPL 2.0</license>
+        <platform>all</platform>
+        <language>de</language>
+        <email>mark.koenig@kleiner-schelm.de</email>
+        <website></website>
+        <source></source>
+    </extension>
+</addon>

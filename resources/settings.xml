@@ -1,0 +1,8 @@
+<?xml version ="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+  <category label="Login">
+    <setting id="email" type="text" label="E-Mail" />
+    <setting id="pass" type="text" label="Password" option="hidden" />
+    <setting id="view" type="bool" label="alle Sender" default="true"/>
+  </category>
+</settings>
