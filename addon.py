@@ -265,6 +265,11 @@ if __name__ == '__main__':
 
     USE_ALL = xbmcplugin.getSetting(HANDLE, 'view')  == "true"
 
+    # check version adaptive
+    info = xbmcaddon.Addon(id='inputstream.adaptive').getAddonInfo('version')
+    if (info == '2.3.17'):
+        xbmcgui.Dialog().notification(ADDON_NAME, 'Falsche Version inputstream.adaptive\nbenötigt wird Version 2.3.18', time=5000)
+
     if PARAMS.has_key('tv'):
         play(PARAMS['tv'][0])
     else:
@@ -285,7 +290,7 @@ if __name__ == '__main__':
                 # wir sind plus mitglied
                 pass
             else:
-                xbmcgui.Dialog().notification(ADDON_NAME, 'StateState= ' + userState, time=4000)
+                xbmcgui.Dialog().notification(ADDON_NAME, 'StateState= ' + userState, time=5000)
             saveFile(filePath, userState)
 
         showChannels(userState, chanList)
